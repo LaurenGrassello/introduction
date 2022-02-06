@@ -62,7 +62,7 @@ def print_hello_x_times(x):#function
 
 print_hello_x_times(4)#print statement
 
-def print_hello_x_or_ten_times(x = 10):#functoion, change value
+def print_hello_x_or_ten_times(x = 10):#function, change value
     for num in range(x):#for loop
         print('Hello')#log statment
 
