@@ -34,8 +34,7 @@ class User:
 
     
     # display user balance method
-    def give_balance(self, balance, amount):
-        self.account_balance = balance - amount
+    def give_balance(self):
         print(f"User: {self.name}, has an account balance of:{self.account_balance}")
         return self
     
@@ -53,27 +52,27 @@ bobo = User("Bobo Baggins", "bobo@theshire.com")
 
 
 # have user one make 3 deposits, 1 withdrawal, display balance
-guido.make_deposit(300).make_deposit(100).make_deposit(500).make_withdrawal(200).give_balance(300 + 100 + 500, 200)
+guido.make_deposit(300).make_deposit(100).make_deposit(500).make_withdrawal(200).give_balance()
 # guido.make_deposit(100)
 # guido.make_deposit(500)
 # guido.make_withdrawal(200)
-# guido.give_balance(300 + 100 + 500, 200)
+# guido.give_balance()
 
 print("*"*50)
 # have user two make 2 deposits, 2 withdrawals, display balance
-monty.make_deposit(50).make_deposit(100).make_withdrawal(20).make_withdrawal(20).give_balance(50 + 100, 20 + 20)
+monty.make_deposit(50).make_deposit(100).make_withdrawal(20).make_withdrawal(20).give_balance()
 # monty.make_deposit(100)
 # monty.make_withdrawal(20)
 # monty.make_withdrawal(20)
-# monty.give_balance(50 + 100, 20 + 20)
+# monty.give_balance()
 
 print("*"*50)
 # have use three make 1 deposit, 3 withdrawals, display balance
-lauren.make_deposit(500).make_withdrawal(100).make_withdrawal(50).make_withdrawal(50).give_balance(500, 100 + 50 +50)
+lauren.make_deposit(500).make_withdrawal(100).make_withdrawal(50).make_withdrawal(50).give_balance()
 # lauren.make_withdrawal(100)
 # lauren.make_withdrawal(50)
 # lauren.make_withdrawal(50)
-# lauren.give_balance(500, 100 + 50 +50)
+# lauren.give_balance()
 
 
 
